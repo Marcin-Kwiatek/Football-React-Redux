@@ -1,0 +1,28 @@
+.navMenu {
+    width: 20%;
+    background-color: #2f3542;
+    position: fixed;
+    top: 100px;
+    height: 100%;
+    z-index: 2;
+}
+
+.menuElement {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+.menuElement:hover {
+    color: wheat;
+}
+
+@media only screen and (max-width: 768px) {
+    .menuElement {
+        font-size: 16px;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
