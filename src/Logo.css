@@ -13,3 +13,8 @@
     padding-top: 20px;
     z-index: 2;
 }
+
+.logoLink {
+    text-decoration: none;
+    color: gold;
+}
