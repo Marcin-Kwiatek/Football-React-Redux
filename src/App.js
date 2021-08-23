@@ -8,6 +8,7 @@ import {
 import Logo from './Logo';
 import Menu from './Menu'
 import Home from './Home'
+import BallonWinners from './BallonWinners';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path='/ballon'>
                     <Logo></Logo>
                     <Menu></Menu>
+                    <BallonWinners></BallonWinners>
                 </Route>
                 <Route path='/championsLeague'>
                     <Logo></Logo>
