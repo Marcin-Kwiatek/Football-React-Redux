@@ -8,8 +8,9 @@ class BallonWinners extends Component {
   return (
     <div className="contentContainer">
         <div className="contentText">
-            <BallonContainer></BallonContainer>
-            <BallonForm></BallonForm>
+          <div className="titleContent">Ballon d 'Or Winners</div>
+          <BallonContainer></BallonContainer>
+          <BallonForm></BallonForm>
         </div>
     </div>
   )}

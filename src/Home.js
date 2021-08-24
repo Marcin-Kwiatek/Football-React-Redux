@@ -6,8 +6,7 @@ class Home extends Component {
   return (
     <div className="contentContainer">
         <div className="contentText">
-
-          <span style={{fontSize:'50px', fontWeight:'bold'}}>O nas</span><br></br>
+          <div className="titleContent">O nas</div>
           Football, calcio, piłka nożna – wiele słów, jedna pasja. Futbol to miejsce, w którym chcemy się nią dzielić bez
           ograniczeń. Chcemy w kreatywny i interesujący sposób pisać o tym co od lat nas fascynuje i pochłania – o piłce… Mamy
           nadzieję, że nasza propozycja będzie dla Was interesującą alternatywą, dzięki czemu uda się nam dołączyć w poczet

@@ -4,19 +4,29 @@ import actions from '../ballonWinners/duck/actions'
 
 const BallonForm = (props) => {
 
-    const ballonInput = React.createRef()
+    const addName = React.createRef()
+    const addYear = React.createRef()
+    const addPoints = React.createRef()
+
 
     const addBallon = (event) => {
-        console.log(props.add)
         event.preventDefault()
-        props.add(ballonInput.current.value)
-
-        ballonInput.current.value=""
+        let newBallonWinner = {}
+        newBallonWinner.name = addName.current.value
+        newBallonWinner.year = addYear.current.value
+        newBallonWinner.points = addPoints.current.value
+        props.add(newBallonWinner)
+        addName.current.value=""
+        addYear.current.value=""
+        addPoints.current.value=""
     }
 
+
     return <>
-        <input className="addInput" ref={ballonInput}></input>
-        <button onClick={addBallon} className='addButton' type='submit'>Add ballon</button>
+        <input style={{width:'30%'}} placeholder='first name and last name player' className="addInput" ref={addName}></input>
+        <input placeholder='year' type="number" min='2020' className="addInput" ref={addYear}></input>
+        <input placeholder='points' type="number" min="1" className="addInput" ref={addPoints}></input>
+        <button onClick={addBallon} className='addButton' type='submit'>ADD BALLOM D'OR WINNER</button>
     </>
 }
 

@@ -21,3 +21,24 @@ body {
     font-size: 32px;
     letter-spacing: 1px;
 }
+
+.addInput {
+    width: 8%;
+    height: 40px;
+    margin: 20px;
+    border: solid 2px green;
+}
+
+.addButton {
+    background-color: green;
+    width: 30%;
+    height: 40px;
+    margin: 20px;
+    color: white;
+}
+
+.titleContent {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
