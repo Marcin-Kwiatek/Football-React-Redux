@@ -15,10 +15,12 @@ const BallonForm = (props) => {
         newBallonWinner.name = addName.current.value
         newBallonWinner.year = addYear.current.value
         newBallonWinner.points = addPoints.current.value
-        props.add(newBallonWinner)
-        addName.current.value=""
-        addYear.current.value=""
-        addPoints.current.value=""
+        if(newBallonWinner.name!==""&&newBallonWinner.year!==""&&newBallonWinner.points!==""){
+            props.add(newBallonWinner)
+            addName.current.value=""
+            addYear.current.value=""
+            addPoints.current.value=""
+        }
     }
 
 
