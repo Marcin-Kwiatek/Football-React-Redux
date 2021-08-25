@@ -8,7 +8,7 @@ body {
     width: 80%;
     position: relative;
     left: 20%;
-    top: 200px;
+    top: 150px;
 }
 
 .contentText {
@@ -41,4 +41,18 @@ body {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
+}
+
+@media only screen and (max-width: 974px) {
+    .contentContainer {
+        top: 100px;
+        width: 90%;
+        left: 10%;
+    }
+    .addInput {
+        width: 20%;
+    }
+    .addButton {
+        width: 50%;
+    }
 }

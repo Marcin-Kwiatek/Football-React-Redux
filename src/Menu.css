@@ -1,4 +1,8 @@
-.navMenu {
+.navMenuSmallVersion {
+    display: none;
+}
+
+.navMenuBigVersion {
     width: 20%;
     background-color: #2f3542;
     position: fixed;
@@ -17,9 +21,36 @@
     color: wheat;
 }
 
-@media only screen and (max-width: 768px) {
-    .menuElement {
-        font-size: 16px;
+.nav__toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 974px) {
+    .navMenuSmallVersion {
+        width: 50%;
+        left: -50%;
+        z-index: 100;
+        background-color: #2f3542;
+        position: fixed;
+        top: 100px;
+        height: 100%;
+        display: inline;
+    }
+    .navMenuBigVersion {
+        display: none;
+    }
+    .nav__toggle {
+        width: 20%;
+        background-color: #2f3542;
+        position: fixed;
+        top: 100px;
+        height: 100%;
+        z-index: 2;
+        display: inline;
+    }
+    .icon {
+        width: 50%;
+        height: 5%;
     }
 }
 
