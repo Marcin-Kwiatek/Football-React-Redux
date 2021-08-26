@@ -11,7 +11,7 @@ const ChampionsForm = (props) => {
     const addChampions = (event) => {
         event.preventDefault()
         let newChampionsWinner = {}
-        newChampionsWinner.club = addClub.current.value
+        newChampionsWinner.club = addClub.current.value.toUpperCase()
         newChampionsWinner.trophies = addTrophie.current.value
         if(newChampionsWinner.club!==""&&newChampionsWinner.trophies!==""){
             props.add(newChampionsWinner)
@@ -30,6 +30,7 @@ const ChampionsForm = (props) => {
 
 const mapDispatchToProps = dispatch => ({
     add: champions => dispatch(actions.add(champions))
+    
 })
 
 export default connect(null, mapDispatchToProps)(ChampionsForm)
