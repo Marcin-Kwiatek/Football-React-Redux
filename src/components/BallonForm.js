@@ -26,7 +26,7 @@ const BallonForm = (props) => {
 
     return <>
         <input style={{width:'30%'}} placeholder='first name and last name player' className="addInput" ref={addName}></input>
-        <input placeholder='year' type="number" min='2020' className="addInput" ref={addYear}></input>
+        <input placeholder='year' type="number" min='1956' className="addInput" ref={addYear}></input>
         <input placeholder='points' type="number" min="1" className="addInput" ref={addPoints}></input>
         <button onClick={addBallon} className='addButton' type='submit'>ADD BALLOM D'OR WINNER</button>
     </>
