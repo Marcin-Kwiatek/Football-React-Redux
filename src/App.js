@@ -10,6 +10,7 @@ import Menu from './Menu'
 import Home from './Home'
 import BallonWinners from './BallonWinners';
 import ChampionsLeagueWinners from './ChampionsLeague';
+import WorldWinners from './WorldChampioship';
 
 function App() {
     return (
@@ -33,6 +34,8 @@ function App() {
                 <Route path='/worldChampionship'>
                     <Logo></Logo>
                     <Menu></Menu>
+                    <WorldWinners></WorldWinners>
+                    
                 </Route>
                 <Route path='/europeanChampionship'>
                     <Logo></Logo>
