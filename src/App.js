@@ -9,6 +9,7 @@ import Logo from './Logo';
 import Menu from './Menu'
 import Home from './Home'
 import BallonWinners from './BallonWinners';
+import ChampionsLeagueWinners from './ChampionsLeague';
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 <Route path='/championsLeague'>
                     <Logo></Logo>
                     <Menu></Menu>
+                    <ChampionsLeagueWinners></ChampionsLeagueWinners>
                 </Route>
                 <Route path='/worldChampionship'>
                     <Logo></Logo>
