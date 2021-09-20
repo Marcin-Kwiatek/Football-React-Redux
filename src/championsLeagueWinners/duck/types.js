@@ -1,5 +1,7 @@
 const ADD_CHAMPIONS = 'ADD_CHAMPIONS'
+const TROPHIES_UP = 'TROPHIES_UP'
 
 export default {
-    ADD_CHAMPIONS
+    ADD_CHAMPIONS,
+    TROPHIES_UP
 }

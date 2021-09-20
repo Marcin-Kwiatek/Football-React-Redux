@@ -12,7 +12,7 @@ const ChampionsForm = (props) => {
         event.preventDefault()
         let newChampionsWinner = {}
         newChampionsWinner.club = addClub.current.value.toUpperCase()
-        newChampionsWinner.trophies = addTrophie.current.value
+        newChampionsWinner.trophies = parseInt(addTrophie.current.value)
         if(newChampionsWinner.club!==""&&newChampionsWinner.trophies!==""){
             props.add(newChampionsWinner)
             addClub.current.value=""
